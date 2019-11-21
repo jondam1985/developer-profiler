@@ -1,0 +1,28 @@
+{
+  "name": "developer-profiler",
+  "version": "1.0.0",
+  "description": "CLI application that generates a PDF file from an user's github profile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jondam1985/developer-profiler.git"
+  },
+  "keywords": [
+    "profile",
+    "github",
+    "profiler"
+  ],
+  "author": "Damian Ruiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jondam1985/developer-profiler/issues"
+  },
+  "homepage": "https://github.com/jondam1985/developer-profiler#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "puppeteer": "^2.0.0"
+  }
+}
