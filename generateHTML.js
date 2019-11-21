@@ -25,7 +25,7 @@ const colors = {
   }
 };
 
-function generateHTML(data) {
+function generateHTML(color, userInfo) {
   return `<!DOCTYPE html>
 <html lang="en">
    <head>
@@ -52,7 +52,7 @@ function generateHTML(data) {
          height: 100%;
          }
          .wrapper {
-         background-color: ${colors[data.color].wrapperBackground};
+         background-color: ${colors[color].wrapperBackground};
          padding-top: 100px;
          }
          body {
@@ -94,8 +94,8 @@ function generateHTML(data) {
          display: flex;
          justify-content: center;
          flex-wrap: wrap;
-         background-color: ${colors[data.color].headerBackground};
-         color: ${colors[data.color].headerColor};
+         background-color: ${colors[color].headerBackground};
+         color: ${colors[color].headerColor};
          padding: 10px;
          width: 95%;
          border-radius: 6px;
@@ -106,7 +106,7 @@ function generateHTML(data) {
          border-radius: 50%;
          object-fit: cover;
          margin-top: -75px;
-         border: 6px solid ${colors[data.color].photoBorderColor};
+         border: 6px solid ${colors[color].photoBorderColor};
          box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px;
          }
          .photo-header h1, .photo-header h2 {
@@ -149,8 +149,8 @@ function generateHTML(data) {
          .card {
            padding: 20px;
            border-radius: 6px;
-           background-color: ${colors[data.color].headerBackground};
-           color: ${colors[data.color].headerColor};
+           background-color: ${colors[color].headerBackground};
+           color: ${colors[color].headerColor};
            margin: 20px;
          }
          
@@ -170,5 +170,49 @@ function generateHTML(data) {
             zoom: .75; 
           } 
          }
-      </style>`
-        }
+      </style>
+      </head>
+<body>
+    <div class="wrapper">
+            <div class="photo-header">
+                <img src="${userInfo.avatar_url}">
+                <h1>Hi,<br>My name is ${userInfo.name}</h1>
+                <h4>Currently @ ${userInfo.company}</h4>
+                <div class="links-nav">
+                    <a class="nav-link" href="https://www.google.com/maps/place/${encodeURI(userInfo.location)}"><h6>Toronto, ON</h6></a>
+                    <a class="nav-link" href="${userInfo.html_url}"><h6>Github</h6></a>
+                    <a class="nav-link" href="${userInfo.blog}"><h6>Blog</h6></a>
+                </div>
+            </div>
+        <main>
+        <div class="container">
+                <h2 class="col">${userInfo.bio}</h2>
+            <div class="row">
+                <div class="card col">
+                    <h2>Public Repositories ${userInfo.public_repos}</h2>
+                </div>
+                <div class="card col">
+                    <h2>Followers ${userInfo.followers}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col">
+                    <h2 class=>Github stars ${userInfo.followers}</h2>
+                </div>
+                <div class="card col">
+                    <h2>Following ${userInfo.following}</h2>
+                </div>
+            </div>
+        </div>
+        </main>
+    </div>
+</body>
+</html>`
+}
+
+module.exports = {
+  colors: colors,
+  generateHTML: generateHTML
+}
+
+//console.log(user.userBuilder("jondam1985"));
