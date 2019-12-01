@@ -6,12 +6,10 @@ This project is a command line interface (CLI) app that generates an html file a
 
 __Sample of generated HTML file__
 
-<img src=" https://content.screencast.com/users/nrt.damian/folders/Snagit/media/6c9106e2-65c6-4970-9bc8-f62e9eb20683/12.01.2019-14.14.png " alt="HTML file using user &quot;jondam1985&quot; and favourite colour &quot;blue&quot;" style="zoom:50%;" />
-
+![HTML sample using "jondam1985" and colour "blue"](https://content.screencast.com/users/nrt.damian/folders/Snagit/media/6c9106e2-65c6-4970-9bc8-f62e9eb20683/12.01.2019-14.14.png)
   __Sample of generated PDF file__
 
-<img src=" https://content.screencast.com/users/nrt.damian/folders/Snagit/media/9fd7ddd9-5f3f-4122-8f2e-23bac40b7868/12.01.2019-14.15.png " alt="PDF file using user &quot;jondam1985&quot; and favourite colour &quot;blue&quot;" style="zoom:50%;" />
-
+![PDF sample using "jondam1985" and colour "blue"](https://content.screencast.com/users/nrt.damian/folders/Snagit/media/9fd7ddd9-5f3f-4122-8f2e-23bac40b7868/12.01.2019-14.15.png)
 
 
 # Content
