@@ -1,8 +1,8 @@
 const html = require("./generateHTML");
 const fs = require("fs");
 
-function writeToFile(fileName, color, user) {
-    fs.writeFile(fileName, html.generateHTML(color, user), function (error) {
+function writeToFile(fileName, color, user, stars) {
+    fs.writeFile(fileName, html.generateHTML(color, user, stars), function (error) {
         if (error) {
             console.log(error);
         }
