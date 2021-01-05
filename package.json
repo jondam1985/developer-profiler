@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/jondam1985/developer-profiler#readme",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "inquirer": "^7.0.0",
     "puppeteer": "^2.0.0"
   },
